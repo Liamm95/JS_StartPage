@@ -2,8 +2,13 @@ const projectName = "Start Page";
 
 const App = () => {
   return (
-    <div>
-      <h1>{projectName}</h1>
+    <div className="notebook">
+      <h1 className="notebook__title">NOTEBOOK AI</h1>
+      <form className="notebook__note">
+        <div className="notebook__field field">
+          <label htmlFor="new-note" className="field__label"></label>
+        </div>
+      </form>
     </div>
   );
 };
