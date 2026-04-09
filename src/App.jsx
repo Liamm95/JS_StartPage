@@ -1,32 +1,28 @@
-const projectName = "Start Page";
+const projectName = "🔥 ТЕСТ 123 🔥";
 
 const App = () => {
   return (
-    <div className="notebook">
-      <h1 className="notebook__title">NOTEBOOK AI</h1>
+    <div className="app">
+      <h1 className="app__title">{projectName}</h1>
       {/* Список заметок */}
-      <div className="notebook__notes">
-        <div className="note">
-          <p className="note__text">Привет! Я AI блокнот</p>
-          <button className="note__delete">✖</button>
+      <div className="app__layout">
+        <div className="notebook">
+          <h2 className="notebook__title">Зам</h2>
+          <div className="notebook__tabs">
+            <button className="tab tab--active">Заметка 1</button>
+            <button className="tab">Заметка 2</button>
+            <button className="tab">Заметка 3</button>
+            <button className="tab tab--new">+</button>
+          </div>
+          {/* Форма для добавления новой заметки */}
+          <div className="notebook__content">
+            <textarea
+              className="notebook__text"
+              placeholder="Текст заметки..."
+            />
+          </div>
         </div>
       </div>
-      {/* Форма для добавления новой заметки */}
-      <form className="notebook__note">
-        <div className="notebook__field field">
-          <label htmlFor="new-note" className="field__label">
-            Write your note here...
-          </label>
-          <input
-            type="text"
-            className="field__input"
-            id="new-note"
-            placeholder=" "
-            autoComplete="off"
-          />
-        </div>
-        <button className="button" type="submit"></button>
-      </form>
     </div>
   );
 };
