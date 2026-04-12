@@ -37,7 +37,7 @@ const App = () => {
           </div>
           <div className="ai-chat__content">
             <placeholder>Спросите чата...</placeholder>
-            <button className="button">{">"}</button>
+            <button className="ai-chat__button">{">"}</button>
           </div>
         </div>
       </div>
