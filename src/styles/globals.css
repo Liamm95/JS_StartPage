@@ -1,0 +1,16 @@
+body {
+  min-height: 100vh;
+}
+
+.app__title {
+  font-family: "Inter", serif;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.app__layout {
+  display: flex;
+  flex-direction: row;
+  min-height: 100vh;
+  font-family: "Inter", serif;
+}
