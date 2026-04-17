@@ -2,4 +2,10 @@
   flex: 1;
   display: flex;
   flex-direction: column;
+  background-color: var(--color-gray-1);
+}
+
+.ai-chat__title {
+  font-size: 0.8rem;
+  text-align: center;
 }
