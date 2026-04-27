@@ -1,5 +1,5 @@
 import AiChat from "./components/AiChat";
-import Notebook from "./components/notebook";
+import Notebook from "./components/Notebook";
 
 const projectName = "NOTEBOOK WITH AI";
 

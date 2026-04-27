@@ -4,3 +4,7 @@
   flex-direction: column;
   background-color: var(--color-white);
 }
+
+.notebook__tabs {
+  display: flex;
+}
