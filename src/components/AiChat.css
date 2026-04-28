@@ -11,7 +11,7 @@
   display: flex;
   justify-content: start;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   margin-bottom: 15px;
 }
 
@@ -25,19 +25,26 @@
   align-items: center;
   justify-content: center;
   width: 12px;
-  height: 12px;
+  height: 100%;
   padding: 0;
   border: none;
   background: transparent;
   cursor: pointer;
   transition: transform 0.2s;
+  color: #000000;
 }
 
 .ai-chat__choose-button:hover {
+  border-radius: 30%;
+  background-color: rgb(219, 218, 218);
+}
+
+.ai-chat__choose-button.clicked svg {
   transform: rotate(180deg);
 }
 
 .ai-chat__choose-button svg {
-  width: 12;
-  height: 100%;
+  width: 8px;
+  height: 4px;
+  cursor: pointer;
 }

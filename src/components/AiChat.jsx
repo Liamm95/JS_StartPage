@@ -2,11 +2,21 @@ import "./AiChat.css";
 import { useState } from "react";
 
 const AiChat = () => {
+  const [clicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!clicked);
+  };
+
   return (
     <div className="ai-chat">
       <div className="ai-chat__header">
         <h2 className="ai-chat__title">Deep Seek</h2>
-        <button className="ai-chat__choose-button">
+        <button
+          className={`ai-chat__choose-button 
+          ${clicked ? "clicked" : ""}`}
+          onClick={handleClick}
+        >
           <svg
             width="5"
             height="3"
