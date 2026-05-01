@@ -2,10 +2,15 @@ import "./AiChat.css";
 import { useState } from "react";
 
 const AiChat = () => {
-  const [clicked, setClicked] = useState(false);
+  const [isModelButtonClicked, setIsModelButtonClicked] = useState(false);
+  const [isHistoryButtonClicked, setIsHistoryButtonClicked] = useState(false);
 
-  const handleClick = () => {
-    setClicked(!clicked);
+  const handleModelClick = () => {
+    setIsModelButtonClicked(!isModelButtonClicked);
+  };
+
+  const handleHistoryClick = () => {
+    setIsHistoryButtonClicked(!isHistoryButtonClicked);
   };
 
   return (
@@ -14,8 +19,8 @@ const AiChat = () => {
         <h2 className="ai-chat__title">Deep Seek</h2>
         <button
           className={`ai-chat__choose-button 
-          ${clicked ? "clicked" : ""}`}
-          onClick={handleClick}
+          ${isModelButtonClicked ? "clicked" : ""}`}
+          onClick={handleModelClick}
         >
           <svg
             width="5"
@@ -37,9 +42,14 @@ const AiChat = () => {
       <div className="ai-chat__history">
         {/* История сообщений чата */}
         <label htmlFor="history-list" className="ai-chat__choose-history">
-          Какой то вопрос
+          История чата
         </label>
-        <button id="history-button" className="ai-chat__choose-button">
+        <button
+          id="history-button"
+          className={`ai-chat__choose-button 
+          ${isHistoryButtonClicked ? "clicked" : ""}`}
+          onClick={handleHistoryClick}
+        >
           <svg
             width="5"
             height="3"

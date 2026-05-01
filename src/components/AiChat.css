@@ -48,3 +48,8 @@
   height: 4px;
   cursor: pointer;
 }
+
+.ai-chat__history {
+  display: flex;
+  gap: 10px;
+}
