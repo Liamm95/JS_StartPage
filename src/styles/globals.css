@@ -1,16 +1,16 @@
+html,
 body {
-  min-height: 100vh;
+  height: 100%;
+  margin: 0;
+  font-family: "Inter", sans-serif;
 }
 
-.app__title {
-  font-family: "Inter", serif;
+/* .app__title {
   margin: 0 auto;
   text-align: center;
-}
+} */
 
 .app__layout {
   display: flex;
-  flex-direction: row;
-  min-height: 100vh;
-  font-family: "Inter", serif;
+  height: 100vh;
 }
