@@ -42,7 +42,11 @@ const AiChat = () => {
       <div className="ai-chat__history">
         {/* История сообщений чата */}
         <label htmlFor="history-button" className="ai-chat__choose-history">
-          Тема чата и история чата
+          Тема и история чата. Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Ipsum architecto distinctio cumque sunt molestiae.
+          Illum accusantium dignissimos, non voluptatum nostrum voluptatibus
+          cupiditate maxime explicabo autem laboriosam eos veritatis, possimus
+          a.
         </label>
         <button
           id="history-button"
