@@ -41,8 +41,8 @@ const AiChat = () => {
       </div>
       <div className="ai-chat__history">
         {/* История сообщений чата */}
-        <label htmlFor="history-list" className="ai-chat__choose-history">
-          История чата
+        <label htmlFor="history-button" className="ai-chat__choose-history">
+          Тема чата и история чата
         </label>
         <button
           id="history-button"
