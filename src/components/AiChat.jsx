@@ -17,12 +17,13 @@ const AiChat = () => {
     <div className="ai-chat">
       <div className="ai-chat__header-layout">
         <div className="ai-chat__header">
-          <h2 className="ai-chat__title">Deep Seek</h2>
           <button
             className={`ai-chat__choose-button 
           ${isModelButtonClicked ? "clicked" : ""}`}
             onClick={handleModelClick}
           >
+            <span className="ai-chat__title">DeepSeek</span>
+
             <svg
               width="5"
               height="3"
@@ -76,12 +77,10 @@ const AiChat = () => {
         </div>
       </div>
       {/* Ответ чата */}
-      <div className="ai-chat__chat-answer-layout">
-        <div className="ai-chat__chat-answer">
-          <div className="ai-chat__answer-wrapper">
-            <p className="ai-chat__answer-text">Ответ чата на вопрос</p>
-          </div>
-          <button className="ai-chat__copy-button">
+      <div className="ai-chat__chat-answer">
+        <div className="ai-chat__answer">
+          <div className="ai-chat__answer-text">Ответ чата на вопрос</div>
+          <button className="ai-chat__answer-copy-button">
             <svg
               width="24"
               height="24"

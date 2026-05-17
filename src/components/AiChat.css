@@ -14,28 +14,27 @@
 .ai-chat__header {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 15px 15px 15px 8px;
+  /* padding: 15px 15px 15px 8px; */
 }
 
 .ai-chat__title {
   font-size: 1rem;
   margin: 0;
   font-weight: 600;
+  line-height: 1;
 }
 
 .ai-chat__choose-button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 12px;
-  height: 24px;
-  padding: 0;
+  padding: 8px;
+  margin: 8px;
   border: none;
   background: transparent;
   cursor: pointer;
   color: #000000;
-  border-radius: 30%;
+  border-radius: 8px;
 }
 
 .ai-chat__choose-button:hover {
